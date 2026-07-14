@@ -460,3 +460,70 @@ html, body {
   margin-bottom: 8px;
   line-height: 1.5;
 }
+
+/* ROI Stats Slide */
+.roi-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.roi-card {
+  background: var(--bg-color);
+  border: 2px solid #E5E7EB;
+  padding: 40px 20px;
+  border-radius: var(--radius-xl);
+  transition: all 0.3s ease;
+}
+.roi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+.roi-card.highlight {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.roi-card.highlight .roi-number,
+.roi-card.highlight .roi-label {
+  color: var(--white);
+}
+.roi-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.roi-label {
+  font-size: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.roi-quote {
+  background: var(--primary-light);
+  padding: 30px 40px;
+  border-radius: var(--radius-lg);
+  border-left: 5px solid var(--primary);
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.roi-quote p {
+  font-size: 17px;
+  font-style: italic;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .roi-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .roi-number {
+    font-size: 36px;
+  }
+  .roi-quote {
+    padding: 20px 24px;
+  }
+}
