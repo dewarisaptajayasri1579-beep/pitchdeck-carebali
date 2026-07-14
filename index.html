@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareBali - Sistem Manajemen Home Care Terpadu</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation (Fixed) -->
+  <nav class="top-nav">
+    <a href="#" class="brand">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      CareBali
+    </a>
+    
+    <div class="lang-toggle">
+      <a href="index.html" class="active">ID</a>
+      <a href="en.html">EN</a>
+    </div>
+  </nav>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1: Cover -->
+      <div class="swiper-slide">
+        <div class="slide-container cover-slide">
+          <h1>From Booking to <span>Better Care.</span></h1>
+          <p>Pelayanan Lebih Teratur, Tenaga Lebih Terukur, Pelanggan Lebih Puas.</p>
+          <button class="btn" onclick="swiper.slideNext()">Mulai Presentasi</button>
+        </div>
+      </div>
+
+      <!-- Slide 2: Problem & Solution -->
+      <div class="swiper-slide">
+        <div class="slide-container split-slide">
+          <div class="split-content">
+            <h2>Tinggalkan Cara Lama.</h2>
+            <p>Bagi pemilik bisnis layanan <em>home care</em>, menangani puluhan pesanan setiap hari secara manual adalah tantangan besar. Risiko jadwal bentrok hingga komplain karena standar pelayanan yang sulit dipantau menjadi hambatan untuk berkembang.</p>
+            <p><strong>CareBali</strong> hadir bukan sekadar aplikasi pemesanan. Kami adalah Sistem Manajemen Terpadu yang merampingkan seluruh urat nadi operasional Anda—dari pencocokan jadwal hingga laporan finansial.</p>
+          </div>
+          <div class="split-content">
+            <!-- decorative illustration or graphic could go here -->
+            <div style="background: var(--primary-light); padding: 40px; border-radius: 24px; text-align: center;">
+              <h3 style="color: var(--primary); font-size: 32px; margin-bottom: 16px;">120 Juta+</h3>
+              <p style="color: var(--text-dark); font-size: 18px; margin-bottom: 0;">Potensi perputaran omzet bulanan yang bisa diamankan dengan manajemen operasional tanpa *human error*.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Mockup Gallery -->
+      <div class="swiper-slide" style="background-color: var(--white);">
+        <div class="slide-container">
+          <h2 class="slide-title">Desain Premium & Intuitif</h2>
+          <p class="slide-subtitle">Antarmuka yang bersih dan ramah pengguna untuk semua kalangan usia.</p>
+          
+          <div class="mockup-grid">
+            <div class="mockup-item">
+              <img src="./images/mockup pelanggan.png" alt="Aplikasi Pelanggan">
+              <div class="mockup-label">Aplikasi Pelanggan</div>
+              <div class="mockup-desc">Pemesanan & Histori Pasien</div>
+            </div>
+            <div class="mockup-item" style="transform: scale(1.15); z-index: 10;">
+              <img src="./images/mockup admin.png" alt="Dashboard Admin">
+              <div class="mockup-label">Dashboard Admin</div>
+              <div class="mockup-desc">Control Center & KPI</div>
+            </div>
+            <div class="mockup-item">
+              <img src="./images/mockup nurse.png" alt="Aplikasi Perawat">
+              <div class="mockup-label">Aplikasi Perawat</div>
+              <div class="mockup-desc">Jadwal & Check-in GPS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3.5: Key Values & Features -->
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <h2 class="slide-title">Nilai Jual & Fitur Utama</h2>
+          <p class="slide-subtitle">Solusi komprehensif yang diotomatisasi untuk menumbuhkan bisnis Anda.</p>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <h4>1. Penjadwalan Cerdas</h4>
+              <p>Sistem merekomendasikan perawat berdasarkan lokasi terdekat, rating, dan pengalaman. Bebas risiko bentrok jadwal.</p>
+            </div>
+            <div class="value-card">
+              <h4>2. Monitoring Real-Time</h4>
+              <p>Pantau perawat dari mulai berangkat, GPS check-in lokasi, hingga unggah foto bukti pelayanan medis.</p>
+            </div>
+            <div class="value-card">
+              <h4>3. Histori Medis Pasien</h4>
+              <p>Data keluhan pasien dan perawat favorit tersimpan aman. Pelanggan tak perlu repot mengulang cerita saat <em>repeat order</em>.</p>
+            </div>
+            <div class="value-card">
+              <h4>4. Otomatisasi Finansial & WA</h4>
+              <p>Tautan pembayaran (DP/Lunas) dan pengingat jadwal dikirim otomatis via WhatsApp. Komisi perawat dihitung instan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Features Ecosystem -->
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <h2 class="slide-title">Ekosistem Sinergis</h2>
+          <p class="slide-subtitle">Menghubungkan 3 pilar bisnis Anda secara otomatis secara real-time.</p>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Admin & Owner</h3>
+              <ul class="feature-list">
+                <li><strong>Dashboard Order:</strong> Tinjau order dan notif WA.</li>
+                <li><strong>Smart Assign:</strong> Tugaskan perawat otomatis dari ketersediaan & lokasi.</li>
+                <li><strong>Monitor Real-Time:</strong> Lacak posisi & status live.</li>
+                <li><strong>CRM & Komplain:</strong> Kelola data pasien & keluhan.</li>
+                <li><strong>Analitik & KPI:</strong> Perhitungan performa, rating, dan laporan omzet instan.</li>
+              </ul>
+            </div>
+            <div class="feature-card">
+              <h3>Perawat (Caregiver)</h3>
+              <ul class="feature-list">
+                <li><strong>Jadwal Kerja:</strong> Set ketersediaan (On/Off).</li>
+                <li><strong>Tracking:</strong> Absen GPS <em>Check-in/out</em> di lokasi.</li>
+                <li><strong>Laporan Medis:</strong> Unggah foto & detail kondisi.</li>
+                <li><strong>Tombol Darurat:</strong> Respons cepat via aplikasi.</li>
+                <li><strong>Transparansi:</strong> Pantau perhitungan komisi & rating.</li>
+              </ul>
+            </div>
+            <div class="feature-card">
+              <h3>Pelanggan (Pasien)</h3>
+              <ul class="feature-list">
+                <li><strong>Rekam Medis:</strong> Data tersimpan aman untuk repeat order.</li>
+                <li><strong>Booking Instan:</strong> Pilih layanan & durasi.</li>
+                <li><strong>Payment Gateway:</strong> Bayar DP/Lunas otomatis.</li>
+                <li><strong>Tracking Perawat:</strong> Pantau profil & status kedatangan.</li>
+                <li><strong>Membership:</strong> Diskon & paket langganan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: SaaS Pricing -->
+      <div class="swiper-slide" style="background-color: var(--primary-light);">
+        <div class="slide-container text-center">
+          <h2 class="slide-title">Paket Langganan (SaaS)</h2>
+          <p class="slide-subtitle">Skala operasional ringan tanpa pusing mikir server. Cukup bayar bulanan.</p>
+
+          <div class="pricing-grid">
+            <!-- Basic -->
+            <div class="price-card">
+              <div class="price-tier">Basic (Starter)</div>
+              <div class="price-amount">750Rb <span>/ bln</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Setup Awal Rp 2.5 Juta</p>
+              <ul class="price-features">
+                <li>Platform PWA (Web)</li>
+                <li>Dashboard Order & Profil Pasien</li>
+                <li>Assign Perawat Manual</li>
+                <li>Riwayat Pelayanan Dasar</li>
+                <li class="disabled">Check-in GPS & Foto Medis</li>
+                <li class="disabled">WA Alerts & Payment Gateway</li>
+              </ul>
+            </div>
+            
+            <!-- Pro -->
+            <div class="price-card popular">
+              <div class="badge">Paling Ideal</div>
+              <div class="price-tier">Pro (Scale-Up)</div>
+              <div class="price-amount">1.85Jt <span>/ bln</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Setup Awal Rp 4.5 Juta</p>
+              <ul class="price-features">
+                <li>PWA + Android App</li>
+                <li>Smart Assignment (Otomatis)</li>
+                <li>Check-in GPS + Foto Medis</li>
+                <li>Email, WA Alerts & Payment Gateway</li>
+                <li>CRM & Kelola Komplain</li>
+                <li>Hitung Komisi Instan</li>
+              </ul>
+            </div>
+
+            <!-- Ultimate -->
+            <div class="price-card">
+              <div class="price-tier">Ultimate (Enterprise)</div>
+              <div class="price-amount">3.5Jt <span>/ bln</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Setup Awal Rp 7.5 Juta</p>
+              <ul class="price-features">
+                <li>PWA + Android + iOS App</li>
+                <li>Real-time GPS Tracking & Emergency</li>
+                <li>Tanda Tangan Digital & Langganan</li>
+                <li>Analitik Bisnis & KPI Perawat Lengkap</li>
+                <li>Auto-Split Payroll & Diskon Membership</li>
+                <li>Laporan Keuangan & Operasional Ekstra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Beli Putus & CTA -->
+      <div class="swiper-slide">
+        <div class="slide-container text-center">
+          <h2 class="slide-title">Atau, Beli Putus (Lisensi Penuh)</h2>
+          <p class="slide-subtitle">Jadikan aplikasi ini Aset Digital Perusahaan Anda tanpa beban tagihan bulanan.</p>
+          
+          <div class="features-grid" style="margin-bottom: 50px;">
+            <div class="feature-card" style="text-align: center;">
+              <h3>Paket Basic</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 17.600.000</div>
+              <p style="font-size: 14px;">(PWA Only)</p>
+            </div>
+            <div class="feature-card" style="text-align: center; border-bottom: 4px solid var(--primary);">
+              <h3>Paket Pro</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 34.800.000</div>
+              <p style="font-size: 14px;">(PWA + Android)</p>
+            </div>
+            <div class="feature-card" style="text-align: center;">
+              <h3>Paket Ultimate</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 54.500.000</div>
+              <p style="font-size: 14px;">(PWA + Android + iOS)</p>
+            </div>
+          </div>
+
+          <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 30px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            <strong>Catatan Tambahan:</strong><br>
+            * Biaya maintenance server mulai Rp 3.500.000 / tahun (dibayarkan mulai tahun kedua).<br>
+            * Seluruh paket yang mencakup aplikasi mobile (Android/iOS) belum termasuk biaya registrasi akun developer resmi ke App Store ($99/tahun) dan Play Store ($25/lifetime) atas nama perusahaan Anda.
+          </div>
+          
+          <button class="btn" style="padding: 18px 40px; font-size: 18px;" onclick="alert('Demo: Membuka email kontak')">Mulai Digitalkan Bisnis Anda</button>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 800,
+      spaceBetween: 0,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

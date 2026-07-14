@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareBali - Integrated Home Care Management System</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation (Fixed) -->
+  <nav class="top-nav">
+    <a href="#" class="brand">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      CareBali
+    </a>
+    
+    <div class="lang-toggle">
+      <a href="index.html">ID</a>
+      <a href="en.html" class="active">EN</a>
+    </div>
+  </nav>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1: Cover -->
+      <div class="swiper-slide">
+        <div class="slide-container cover-slide">
+          <h1>From Booking to <span>Better Care.</span></h1>
+          <p>More Organized Services, Measurable Performance, Happier Customers.</p>
+          <button class="btn" onclick="swiper.slideNext()">Start Presentation</button>
+        </div>
+      </div>
+
+      <!-- Slide 2: Problem & Solution -->
+      <div class="swiper-slide">
+        <div class="slide-container split-slide">
+          <div class="split-content">
+            <h2>Leave the Old Ways Behind.</h2>
+            <p>For home care business owners, handling dozens of orders every day manually is a huge challenge. Risks ranging from schedule clashes to complaints due to hard-to-monitor service standards are bottlenecks to growth.</p>
+            <p><strong>CareBali</strong> is here as more than just a booking app. We are an Integrated Management System that streamlines your entire operational pipeline—from smart scheduling to financial reporting.</p>
+          </div>
+          <div class="split-content">
+            <!-- decorative illustration or graphic could go here -->
+            <div style="background: var(--primary-light); padding: 40px; border-radius: 24px; text-align: center;">
+              <h3 style="color: var(--primary); font-size: 32px; margin-bottom: 16px;">Rp 120M+</h3>
+              <p style="color: var(--text-dark); font-size: 18px; margin-bottom: 0;">Potential monthly turnover that can be secured with error-free operational management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Mockup Gallery -->
+      <div class="swiper-slide" style="background-color: var(--white);">
+        <div class="slide-container">
+          <h2 class="slide-title">Premium & Intuitive Design</h2>
+          <p class="slide-subtitle">A clean and user-friendly interface designed for all ages.</p>
+          
+          <div class="mockup-grid">
+            <div class="mockup-item">
+              <img src="./images/mockup pelanggan.png" alt="Customer App">
+              <div class="mockup-label">Customer App</div>
+              <div class="mockup-desc">Booking & Patient History</div>
+            </div>
+            <div class="mockup-item" style="transform: scale(1.15); z-index: 10;">
+              <img src="./images/mockup admin.png" alt="Admin Dashboard">
+              <div class="mockup-label">Admin Dashboard</div>
+              <div class="mockup-desc">Control Center & KPIs</div>
+            </div>
+            <div class="mockup-item">
+              <img src="./images/mockup nurse.png" alt="Nurse App">
+              <div class="mockup-label">Nurse App</div>
+              <div class="mockup-desc">Schedules & GPS Check-in</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3.5: Key Values & Features -->
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <h2 class="slide-title">Key Values & Core Features</h2>
+          <p class="slide-subtitle">A comprehensive automated solution designed to grow your business.</p>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <h4>1. Smart Scheduling</h4>
+              <p>The system recommends nurses based on location, rating, and experience. Zero risk of schedule clashes.</p>
+            </div>
+            <div class="value-card">
+              <h4>2. Real-Time Monitoring</h4>
+              <p>Monitor nurses from departure to GPS check-in, up to the upload of photo evidence for medical services.</p>
+            </div>
+            <div class="value-card">
+              <h4>3. Patient Medical History</h4>
+              <p>Patient complaints and favorite nurses are securely stored. Customers never have to repeat their stories when re-ordering.</p>
+            </div>
+            <div class="value-card">
+              <h4>4. Financial & WA Automation</h4>
+              <p>Payment links (Down Payment/Full) and schedule reminders are sent automatically via WhatsApp. Nurse commissions are calculated instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Features Ecosystem -->
+      <div class="swiper-slide">
+        <div class="slide-container">
+          <h2 class="slide-title">Synergistic Ecosystem</h2>
+          <p class="slide-title" style="font-size: 18px; color: var(--text-muted); font-weight: 400; margin-bottom: 50px;">Connecting the 3 pillars of your business automatically in real-time.</p>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Admin & Owner</h3>
+              <ul class="feature-list">
+                <li><strong>Order Dashboard:</strong> Monitor incoming orders & WA alerts.</li>
+                <li><strong>Smart Assign:</strong> Auto-assign nurses based on availability & location.</li>
+                <li><strong>Real-Time Monitor:</strong> Track live status and positions.</li>
+                <li><strong>CRM & Complaints:</strong> Manage patient data & resolutions.</li>
+                <li><strong>Analytics & KPI:</strong> Calculate performance, ratings, and instant revenue.</li>
+              </ul>
+            </div>
+            <div class="feature-card">
+              <h3>Nurses (Caregiver)</h3>
+              <ul class="feature-list">
+                <li><strong>Schedules:</strong> Set availability (On/Off).</li>
+                <li><strong>Tracking:</strong> GPS <em>Check-in/out</em> on location.</li>
+                <li><strong>Medical Reports:</strong> Upload photos & condition details.</li>
+                <li><strong>Emergency Button:</strong> Quick response via the app.</li>
+                <li><strong>Transparency:</strong> Monitor commission calculations & ratings.</li>
+              </ul>
+            </div>
+            <div class="feature-card">
+              <h3>Customers (Patients)</h3>
+              <ul class="feature-list">
+                <li><strong>Medical Records:</strong> Securely stored for easy re-ordering.</li>
+                <li><strong>Instant Booking:</strong> Select services & durations.</li>
+                <li><strong>Payment Gateway:</strong> Pay down payments/full automatically.</li>
+                <li><strong>Nurse Tracking:</strong> Monitor profiles & arrival status.</li>
+                <li><strong>Membership:</strong> Discounts & subscription packages.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: SaaS Pricing -->
+      <div class="swiper-slide" style="background-color: var(--primary-light);">
+        <div class="slide-container text-center">
+          <h2 class="slide-title">Subscription Packages (SaaS)</h2>
+          <p class="slide-subtitle">Scale your operations effortlessly without server headaches. Just pay monthly.</p>
+
+          <div class="pricing-grid">
+            <!-- Basic -->
+            <div class="price-card">
+              <div class="price-tier">Basic (Starter)</div>
+              <div class="price-amount">750K <span>/ mo</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Initial Setup Rp 2.5M</p>
+              <ul class="price-features">
+                <li>PWA Platform (Web)</li>
+                <li>Order Dashboard & Patient Profiles</li>
+                <li>Manual Nurse Assignment</li>
+                <li>Basic Service History</li>
+                <li class="disabled">GPS Check-in & Photo Evidence</li>
+                <li class="disabled">WA Alerts & Payment Gateway</li>
+              </ul>
+            </div>
+            
+            <!-- Pro -->
+            <div class="price-card popular">
+              <div class="badge">Most Ideal</div>
+              <div class="price-tier">Pro (Scale-Up)</div>
+              <div class="price-amount">1.85M <span>/ mo</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Initial Setup Rp 4.5M</p>
+              <ul class="price-features">
+                <li>PWA + Android App</li>
+                <li>Smart Assignment (Automated)</li>
+                <li>GPS Check-in + Medical Photos</li>
+                <li>Email, WA Alerts & Payment Gateway</li>
+                <li>CRM & Complaints Management</li>
+                <li>Instant Commission Calculation</li>
+              </ul>
+            </div>
+
+            <!-- Ultimate -->
+            <div class="price-card">
+              <div class="price-tier">Ultimate (Enterprise)</div>
+              <div class="price-amount">3.5M <span>/ mo</span></div>
+              <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; margin-top: -10px;">+ Initial Setup Rp 7.5M</p>
+              <ul class="price-features">
+                <li>PWA + Android + iOS App</li>
+                <li>Real-time GPS Tracking & Emergency</li>
+                <li>Digital Signatures & Subscriptions</li>
+                <li>Business Analytics & Full Nurse KPIs</li>
+                <li>Auto-Split Payroll & Member Discounts</li>
+                <li>Advanced Financial & Operational Reports</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Beli Putus & CTA -->
+      <div class="swiper-slide">
+        <div class="slide-container text-center">
+          <h2 class="slide-title">Or, One-Time Purchase (Full License)</h2>
+          <p class="slide-subtitle">Make this application your Company's Digital Asset without monthly billing burdens.</p>
+          
+          <div class="features-grid" style="margin-bottom: 50px;">
+            <div class="feature-card" style="text-align: center;">
+              <h3>Basic Package</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 17.600.000</div>
+              <p style="font-size: 14px;">(PWA Only)</p>
+            </div>
+            <div class="feature-card" style="text-align: center; border-bottom: 4px solid var(--primary);">
+              <h3>Pro Package</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 34.800.000</div>
+              <p style="font-size: 14px;">(PWA + Android)</p>
+            </div>
+            <div class="feature-card" style="text-align: center;">
+              <h3>Ultimate Package</h3>
+              <div style="font-size: 32px; font-family: 'Outfit'; font-weight: 700; color: var(--primary); margin: 10px 0;">Rp 54.500.000</div>
+              <p style="font-size: 14px;">(PWA + Android + iOS)</p>
+            </div>
+          </div>
+
+          <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 30px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            <strong>Additional Notes:</strong><br>
+            * Server maintenance costs start from Rp 3,500,000 / year (payable from the second year).<br>
+            * Packages that include mobile apps (Android/iOS) do not include the official developer account registration fees for the App Store ($99/year) and Play Store ($25/lifetime) under your company's name.
+          </div>
+          
+          <button class="btn" style="padding: 18px 40px; font-size: 18px;" onclick="alert('Demo: Opening contact email')">Start Digitizing Your Business</button>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Swiper Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Swiper Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 800,
+      spaceBetween: 0,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
